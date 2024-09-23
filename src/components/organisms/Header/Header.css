@@ -1,0 +1,21 @@
+header {
+  width: 100%;
+  height: 4.5rem;
+}
+
+.header-contents{
+  background-color: aquamarine;
+  margin: auto;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between
+}
+
+.header-menu{
+  display: flex;
+  flex-direction:row;
+  gap:4rem;
+  justify-content:flex-end;
+}
