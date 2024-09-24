@@ -1,4 +1,5 @@
-import HeaderTittle from '../../atoms/tittle/headerTittle';
+
+import HeaderTittle from '../../atoms/tittle/HeaderTittle';
 import './Header.css'
 
 export default function Header(){
@@ -7,7 +8,7 @@ export default function Header(){
     <header>
       <div className='header-contents'>
         <HeaderTittle />
-        <div className='header-menu'>
+        <div className='header-menu-group'>
           {headerContentsList.map((item, index)=>(
             <div key={index}>{item}</div>
           ))}

@@ -1,5 +1,8 @@
+import './HeaderTittle.css';
+
 export default function HeaderTittle(){
+  const tittleName = "ChangeToDev";
   return(
-    <div>타이틀입니둥</div>
+    <div className='header-tittle'>{tittleName}</div>
   )
 }
