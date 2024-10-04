@@ -1,15 +1,28 @@
 header {
-  background-color: beige;
   width: 100%;
   height: 4.5rem;
   position: fixed;
 }
 
-.header-contents .header-item:hover{
+.scrolled-header .header-item:hover{
   color: red;
+  cursor: pointer;
 }
 
-.header-contents{
+.scrolled-header{
+  color: black;
+}
+
+.noScrolled-header .header-item:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.noScrolled-header{
+  color : hsla(0,0%,100%,.7);
+}
+
+.header-common{
   width: 100%;
   height: 100%;
   margin: 0 auto;

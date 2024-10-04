@@ -9,6 +9,26 @@
   font-style: normal;
 }
 
+:root{
+  --font-size:16px;
+}
+
+@media screen and (max-width:768px){
+  :root{
+    --font-size :14px;
+  }
+}
+
+@media screen and (max-width:480px){
+  :root{
+    --font-size :12px;
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
+
 body{
   font-family: 'jalnanGothic', sans-serif;
 }
@@ -18,3 +38,4 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
+
