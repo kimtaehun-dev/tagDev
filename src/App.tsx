@@ -1,11 +1,9 @@
 import './App.css'
-import Header from './components/organisms/Header/Header'
+import MainPage from './components/pages/MainPage'
 
 function App() {
   return (
-    <>
-      <Header/>
-    </>
+    <MainPage/>
   )
 }
 

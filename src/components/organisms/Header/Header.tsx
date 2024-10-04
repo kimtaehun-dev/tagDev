@@ -10,7 +10,7 @@ export default function Header(){
         <HeaderTittle />
         <div className='header-menu-group'>
           {headerContentsList.map((item, index)=>(
-            <div key={index}>{item}</div>
+            <div className='header-item' key={index}>{item}</div>
           ))}
         </div>
       </div>
