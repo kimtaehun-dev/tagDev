@@ -30,7 +30,7 @@ export default function Header(){
         <HeaderTittle />
         <div className='header-menu-group'>
           {headerContentsList.map((item, index)=>(
-            <div className='header-item' key={index}>{item}</div>
+            <nav className='header-item' key={index}>{item}</nav>
           ))}
         </div>
       </div>

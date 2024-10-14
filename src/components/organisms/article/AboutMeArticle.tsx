@@ -1,5 +1,9 @@
+import './AboutMeArticle.css';
+
 export default function AboutMeArticle(){
   return (
-    <div>어바웃미이</div>
+    <article>
+      <h2>About me tittle</h2>
+    </article>
   )
 }
