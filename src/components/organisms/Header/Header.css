@@ -1,28 +1,10 @@
+/* Common */
 header {
   width: 100%;
   height: 4.5rem;
   position: fixed;
 }
-
-.scrolled-header{
-  color: black;
-}
-
-.scrolled-header .header-item:hover{
-  color: red;
-  cursor: pointer;
-}
-
-.noScrolled-header{
-  color : hsla(0,0%,100%,.7);
-}
-
-.noScrolled-header .header-item:hover{
-  color: white;
-  cursor: pointer;
-}
-
-.header-common{
+.header-container-common{
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -31,35 +13,51 @@ header {
   justify-content : space-between;
   align-items:center;
 }
+.header-tittle{
+  font-size: 1.5rem;
+  margin : 2rem;
+}
 
-.header-menu-group{
+/* default(PC & noScroll) Header */
+.header-default{
+  background-color:transparent;
+}
+.header-contents-default{
   display: flex;
   flex-direction:row;
   gap:4rem;
   justify-content:flex-end;
 }
+.header-items-default{
+  color :#fff;
+}
 
-.header-menu-mobile-group{
+.header-items-default:hover{
+  cursor: pointer;
+  color : hsla(0,0%,100%,.7);
+}
+
+/* Mobile & Scrolled Header */
+.header-optional{
+  background-color:beige;
+}
+.header-contents-optional{
   position: absolute;
   top: 4.5rem;
   width: 100%;
   height: 1rem;
-  /* overflow: hidden; */
-  max-height: 0;
-  transition: max-height 0.5s ease-out;
+}
+.header-items-optional{
+  color :black;
 }
 
-.header-menu-mobile-group.open {
-  max-height: 500px; /* 열렸을 때의 최대 높이 */
+.header-items-optional:hover{
+  cursor: pointer;
+  color : #fd7e14;
 }
 
-.header-mobile-item{
-  width: 100%;
-  padding:1rem;
-  background-color: beige;
-}
-
-.header-menu-mobile-btn{
+/* only for mobile Device */
+.header-contents-mobile-btn{
   display: none;
   background-color:transparent;
   border-radius: 10%;
@@ -68,21 +66,43 @@ header {
   margin-right: 20px;
 }
 
-.header-menu-mobile-btn img {
+.header-contents-mobile-btn img {
   width: 80%;
   height: 80%;
   text-align: center;
   vertical-align: middle;
 }
 
+.header-contents-mobile-nav{
+  position: absolute;
+  top: 4.5rem;
+  width: 100%;
+  height: 0;
+  overflow: auto;
+  background: beige;
+  transition: height 0.3s ease;
+}
+
+.act {
+  /* visibility: visible; */
+  height:20vh;
+}
+
+.header-contents-mobile-items{
+  width: 100%;
+  padding:1rem;
+  background-color: beige;
+}
+.header-contents-mobile-items:hover{
+  color : #fd7e14;
+}
+
+/* media query */
 @media (max-width : 768px){
-  .header-menu-group {
+  .header-contents-default{
     display: none;
   }
-  .header-menu-mobile-btn{
+  .header-contents-mobile-btn{
     display: block;
-  }
-  .header-tittle{
-    font-size: large;
   }
 }

@@ -1,51 +1,64 @@
 import { useEffect, useState } from 'react';
-import HeaderTittle from '../../atoms/tittle/HeaderTittle';
 import './Header.css';
 
 export default function Header() {
+  const tittleName = "ChangeToDev";
   const headerContentsList = ['About me', 'Skills', 'Archiving', 'Projects', 'Career'];
-
-  // 모바일용 네비게이션 버튼
+  const [mobileState, setMobileState] = useState(false);
+  
+  //For Mobile Header Navigator
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const handleNavBtn = () => {
-    setIsNavOpen(!isNavOpen);
-  };
+  const handleNavSwitch = ()=>{setIsNavOpen((prev=>!prev))}
+  // const handleNavOpen = ()=>{setIsNavOpen(true)}
+  const handleNabClose =()=>{setIsNavOpen(false)}
+  const handleNavMove =()=>{
+    handleNabClose();
+  }
 
-  // 스크롤 상태 CSS 처리
+
+  // Scrolled
   const [isScrolled, setIsScrolled] = useState(false);
+
+  // Scroll and resize event listeners
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    const handleResize = () => {
+      setMobileState(window.innerWidth < 700);
     };
 
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+
+    // Initialize mobile state on mount
+    handleResize();
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
-
   return (
-    <header style={{ backgroundColor: isScrolled ? 'beige' : '' }}>
-      <div className={isScrolled ? 'scrolled-header header-common' : 'noScrolled-header header-common'}>
-        <HeaderTittle />
-        <div className='header-menu-group'>
+    <header className={isScrolled||mobileState?'header-optional':'header-default'}>
+      <div className='header-container-common'>
+        <div className={`header-tittle ${isScrolled||mobileState?'header-items-optional':'header-items-default'}`}>{tittleName}</div>
+        <div className='header-contents-default'>
           {headerContentsList.map((item, index) => (
-            <nav className='header-item' key={index}>{item}</nav>
+            <nav className={isScrolled||mobileState?'header-items-optional':'header-items-default'} key={index}>{item}</nav>
           ))}
         </div>
-        <button className='header-menu-mobile-btn' type='button' onClick={handleNavBtn}>
+        <button className='header-contents-mobile-btn' type='button' onClick={handleNavSwitch}>
           <img src='/src/assets/images/icons8-menu.svg' alt='Menu' />
         </button>
       </div>
-      <div className={`header-menu-mobile-group ${isNavOpen ? 'open' : ''} scrolled-header`}>
-        {headerContentsList.map((item, index) => (
-          <nav className='header-mobile-item header-item' key={index}>{item}</nav>
-        ))}
-      </div>
+      <div className={`header-contents-mobile-nav ${isNavOpen?'act':''}`}>
+      {headerContentsList.map((item, index) => (
+        <nav className='header-contents-mobile-items' onClick={handleNavMove} key={index}>{item}</nav>
+      ))}
+    </div>
+    
     </header>
   );
 }

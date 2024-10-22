@@ -1,4 +1,4 @@
 article{
-  height : 700px;
   background-color: aqua;
+  height: calc(100vh - 4.5rem);
 }
