@@ -1,3 +1,39 @@
 .about-me-frame{
-  width: 100%;
+  width: 70%;
+  margin: auto;
+  height: calc(100vh);
+  color : #F0F0F0;
+}
+
+.app-main-tittle{
+  padding-top: 150px;
+  font-size: x-large;
+}
+
+
+.app-main-text{
+  position: absolute;
+  bottom: 15rem;
+  font-size: large;
+}
+
+.app-main-text >p{
+  font-size: 30px;
+  margin : 1rem;
+}
+
+.app-main-text span{
+  color : #1E90FF;
+}
+
+
+@media(max-width:768px){
+  .app-main-tittle{
+    padding-top: 150px;
+    font-size: medium;
+  }
+
+  .app-main-text{
+    bottom: 23rem;
+  }
 }
