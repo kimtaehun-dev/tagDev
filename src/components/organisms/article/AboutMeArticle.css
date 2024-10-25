@@ -12,9 +12,31 @@
 
 
 .app-main-text{
-  position: absolute;
-  bottom: 15rem;
+  position: relative;
+  display: flex;
+  padding-top: 20rem;
   font-size: large;
+}
+
+.intro-text {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.text-type-1{
+  flex-direction: column;
+  animation: typing 2s steps(6), blink 0.5s step-end infinite;
+  border-right: 2px solid #F0F0F0;
+}
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
 
 .app-main-text >p{
