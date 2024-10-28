@@ -9,8 +9,7 @@ export default function AboutMeArticle() {
       <Divider/>
       <div className='app-main-text'>
         <p className='intro-text text-type-1'>Hello,</p>
-        <br/>
-        <p className='intro-text text-type-1'>this is <span>TaeHun's</span> portfolio.</p>
+        <p className='intro-text text-type-2'>This is <span>TaeHun's</span> portfolio.</p>
       </div>
     </article>
   );

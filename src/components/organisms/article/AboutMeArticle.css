@@ -7,15 +7,17 @@
 
 .app-main-tittle{
   padding-top: 150px;
-  font-size: x-large;
+  font-size: 25;
 }
 
 
-.app-main-text{
-  position: relative;
-  display: flex;
+/* 처음부터 다시하는거야 */
+
+.app-main-text {
   padding-top: 20rem;
-  font-size: large;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .intro-text {
@@ -23,26 +25,33 @@
   overflow: hidden;
 }
 
-.text-type-1{
-  flex-direction: column;
-  animation: typing 2s steps(6), blink 0.5s step-end infinite;
-  border-right: 2px solid #F0F0F0;
+.text-type-1 {
+  width: 5ch;
+  animation: typing 0.5s steps(5) forwards, blink 0.5s step-end 0.5s infinite; /* blink 애니메이션을 무한으로 설정 */
+  border-right: 3px black; /* 초기 커서 색상 설정 */
+  font-size: 2rem;
 }
+
 @keyframes typing {
-  from {
-    width: 0
-  }
+  from{ width: 0;}
+  to { width: 5ch; }
 }
 @keyframes blink {
+  0%, 100% {
+    border-color: transparent; /* 타이핑 애니메이션이 끝난 후에는 투명하게 설정 */
+  }
   50% {
-    border-color: transparent
+    border-color: white; /* 깜빡임 중간에 커서 색상을 흰색으로 변경 */
   }
 }
+/* ---------------------------------------------- */
+
 
 .app-main-text >p{
   font-size: 30px;
   margin : 1rem;
 }
+
 
 .app-main-text span{
   color : #1E90FF;
