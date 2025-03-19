@@ -10,7 +10,15 @@
 }
 
 :root{
-  --font-size:16px;
+  --font-size:16px; 
+  --font-color : #F0F0F0;
+  /*Article*/
+  --article-tittle : 3rem;
+  --article-tittle-weight : 400;
+  --background : #1b1b1e;
+  /*Theme Color*/
+  --highlight-color : #1E90FF;
+
 }
 
 @media screen and (max-width:768px){

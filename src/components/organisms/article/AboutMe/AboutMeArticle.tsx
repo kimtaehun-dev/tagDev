@@ -1,4 +1,4 @@
-import Divider from '../../atoms/divider/Divider';
+import Divider from '../../../atoms/divider/Divider';
 import './AboutMeArticle.css';
 
 export default function AboutMeArticle() {

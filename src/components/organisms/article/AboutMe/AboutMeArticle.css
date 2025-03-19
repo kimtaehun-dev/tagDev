@@ -26,23 +26,24 @@
 }
 
 .text-type-1 {
-  width: 5ch;
-  animation: typing 0.5s steps(5) forwards, blink 0.5s step-end 0.5s infinite; /* blink 애니메이션을 무한으로 설정 */
-  border-right: 3px black; /* 초기 커서 색상 설정 */
-  font-size: 2rem;
+  width: 0;
+  animation: typing1 0.3s steps(6, end) forwards, blink 0.7s infinite;
 }
 
-@keyframes typing {
-  from{ width: 0;}
-  to { width: 5ch; }
+.text-type-2 {
+  width: 0;
+  animation: typing2 0.7s steps(27, end) forwards;
+  animation-delay: 0.5s; /* 첫 번째 애니메이션이 끝난 후 실행 */
 }
-@keyframes blink {
-  0%, 100% {
-    border-color: transparent; /* 타이핑 애니메이션이 끝난 후에는 투명하게 설정 */
-  }
-  50% {
-    border-color: white; /* 깜빡임 중간에 커서 색상을 흰색으로 변경 */
-  }
+
+@keyframes typing1 {
+  from { width: 0; }
+  to { width: 6ch; } 
+}
+
+@keyframes typing2 {
+  from { width: 0; }
+  to { width: 27ch; } 
 }
 /* ---------------------------------------------- */
 

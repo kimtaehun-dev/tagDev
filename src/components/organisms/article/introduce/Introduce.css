@@ -1,0 +1,11 @@
+.introduce-article{
+  width: 100%;
+  padding-top : 4.5rem;
+}
+
+.introduce-container{
+  width :100%;
+  max-width : 71rem;
+  margin: 0 auto;
+  color : var(--font-color);
+}
