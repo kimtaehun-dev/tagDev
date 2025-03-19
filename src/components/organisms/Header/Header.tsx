@@ -3,7 +3,7 @@ import './Header.css';
 
 export default function Header() {
   const tittleName = "ChangeToDev";
-  const headerContentsList = ['About me', 'Skills', 'Archiving', 'Projects', 'Career'];
+  const headerContentsList = ['Introduce', 'Skills', 'Projects', 'Career'];
   const [mobileState, setMobileState] = useState(false);
   
   //For Mobile Header Navigator
