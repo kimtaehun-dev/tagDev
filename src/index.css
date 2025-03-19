@@ -9,8 +9,37 @@
   font-style: normal;
 }
 
+:root{
+  --font-size:16px; 
+  --font-color : #F0F0F0;
+  /*Article*/
+  --article-tittle : 3rem;
+  --article-tittle-weight : 400;
+  --background : #1b1b1e;
+  /*Theme Color*/
+  --highlight-color : #1E90FF;
+
+}
+
+@media screen and (max-width:768px){
+  :root{
+    --font-size :14px;
+  }
+}
+
+@media screen and (max-width:480px){
+  :root{
+    --font-size :10px;
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
+
 body{
   font-family: 'jalnanGothic', sans-serif;
+  background-color: #1b1b1e;
 }
 
 * {
@@ -18,3 +47,4 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
+

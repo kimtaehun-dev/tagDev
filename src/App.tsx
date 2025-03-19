@@ -1,12 +1,10 @@
 import './App.css'
-import Header from './components/organisms/Header/Header'
+import MainPage from './components/pages/MainPage'
 
 //test
 function App() {
   return (
-    <>
-      <Header/>
-    </>
+    <MainPage/>
   )
 }
 

@@ -1,0 +1,8 @@
+.article-tittle{
+  width : 250px;
+  font-size : var(--article-tittle);
+  font-weight: var(--article-tittle-weight);
+  margin: 0 auto;
+
+  grid-area : tittle;
+}
