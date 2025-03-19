@@ -1,32 +1,36 @@
 .intro-item-card{
   width: 33.3333333%;
+  min-width: 370px;
   display :grid;
   grid-template-areas: 
   'intro-icon intro-tittle'
   'intro-icon intro-value';
+  grid-template-columns: 40% 60%;
 }
-
-.icon-area{
-  width: 40%;
-  grid-area : intro-icon;
-  background-color: aqua;
-}
-
-.tittle-area{
-  width: 60%;
-  grid-area: intro-tittle;
-  background-color: bisque;
-}
-
-.value-area{
-  width: 60%;
-  grid-area : intro-value;
-  background-color: blueviolet;
-}
-
 
 .icon-area, .tittle-area, .value-area{
   display: flex;
   align-items: center;
+  
+}
+
+.icon-area{
+  grid-area : intro-icon;
   justify-content: center;
+}
+
+.tittle-area{
+  grid-area: intro-tittle;
+  justify-content: start;
+}
+
+.value-area{
+  grid-area : intro-value;
+  justify-content: start;
+}
+
+@media (max-width:768px){
+  .intro-item-card{
+    padding : 10px;
+  }
 }
