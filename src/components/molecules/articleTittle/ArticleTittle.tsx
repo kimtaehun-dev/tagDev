@@ -7,7 +7,7 @@ type ArticleTittleType = {
 export default function ArticleTittle({tittleText}:ArticleTittleType){
   return (
     <div className="article-tittle">
-      <div>{tittleText}</div>
+      <div className='tittle-text'>{tittleText}</div>
       <Divider />
     </div>
   )

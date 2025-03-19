@@ -48,9 +48,10 @@
 /* ---------------------------------------------- */
 
 
-.app-main-text >p{
-  font-size: 30px;
-  margin : 1rem;
+.app-main-text > p {
+  /* 디바이스 최적화 최소 1.2rem, 최대 2rem */
+  font-size: clamp(1.2rem, 4vw, 2rem); 
+  margin: 1rem;
 }
 
 
@@ -59,13 +60,13 @@
 }
 
 
-@media(max-width:768px){
-  .app-main-tittle{
-    padding-top: 150px;
-    font-size: medium;
+@media (max-width: 768px) {
+  .app-main-tittle {
+    padding-top: 300px;
+    font-size: 1.5rem; 
   }
 
-  .app-main-text{
-    bottom: 23rem;
+  .app-main-text {
+    padding-top: 10rem; /* bottom 대신 padding-top 사용 */
   }
 }

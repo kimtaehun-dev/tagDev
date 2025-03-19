@@ -1,5 +1,6 @@
 import AboutMeArticle from '../article/AboutMe/AboutMeArticle';
 import Introduce from '../article/introduce/Introduce';
+import Skills from '../article/skills/Skills';
 import './mainSection.css';
 
 export default function MainSection(){
@@ -7,7 +8,7 @@ export default function MainSection(){
     <main>
       <AboutMeArticle/>
       <Introduce />
-      <article className='test'>아티클3</article>
+      <Skills />
       <article className='test'>아티클4</article>
     </main>
   )
