@@ -1,0 +1,32 @@
+.intro-item-card{
+  width: 33.3333333%;
+  display :grid;
+  grid-template-areas: 
+  'intro-icon intro-tittle'
+  'intro-icon intro-value';
+}
+
+.icon-area{
+  width: 40%;
+  grid-area : intro-icon;
+  background-color: aqua;
+}
+
+.tittle-area{
+  width: 60%;
+  grid-area: intro-tittle;
+  background-color: bisque;
+}
+
+.value-area{
+  width: 60%;
+  grid-area : intro-value;
+  background-color: blueviolet;
+}
+
+
+.icon-area, .tittle-area, .value-area{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
