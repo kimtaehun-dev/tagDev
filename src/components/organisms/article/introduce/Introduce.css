@@ -1,14 +1,6 @@
-.introduce-frame{
+.introduce-article{
   width: 100%;
   padding-top : 4.5rem;
-
-  /*grid setting*/
-  display : grid;
-  grid-template-areas: 
-  'tittle tittle'
-  'thumbnail itemCards'
-  'footer'
-  ;
 }
 
 .introduce-container{
@@ -17,9 +9,3 @@
   margin: 0 auto;
   color : var(--font-color);
 }
-
-.introduce-main{
-  height : 500px;
-}
-
-
