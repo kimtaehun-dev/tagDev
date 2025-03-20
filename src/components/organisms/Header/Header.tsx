@@ -11,7 +11,11 @@ export default function Header() {
   const handleNavSwitch = ()=>{setIsNavOpen((prev=>!prev))}
   // const handleNavOpen = ()=>{setIsNavOpen(true)}
   const handleNabClose =()=>{setIsNavOpen(false)}
-  const handleNavMove =()=>{
+  const handleNavMove =(id:string)=>{
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
     handleNabClose();
   }
 
@@ -71,7 +75,11 @@ export default function Header() {
       </div>
       <div className={`header-contents-mobile-nav ${isNavOpen?'act':''}`}>
       {headerContentsList.map((item, index) => (
-        <nav className='header-contents-mobile-items' onClick={handleNavMove} key={index}>{item}</nav>
+        <nav 
+        className='header-contents-mobile-items' 
+        key={index}
+        onClick={()=>handleNavMove(item)} 
+        >{item}</nav>
       ))}
     </div>
     
