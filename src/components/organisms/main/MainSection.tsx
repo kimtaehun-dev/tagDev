@@ -9,7 +9,6 @@ export default function MainSection(){
       <AboutMeArticle/>
       <Introduce />
       <Skills />
-      <article className='test'>아티클4</article>
     </main>
   )
 }
