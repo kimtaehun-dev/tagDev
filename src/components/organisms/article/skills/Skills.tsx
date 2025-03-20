@@ -22,7 +22,7 @@ const skillCategories = [
 
 export default function Skills(){
   return (
-    <article className='skills-frame'>
+    <article className='skills-frame' id="Skills">
       <ArticleTittle tittleText={"Skills"}/>
       <div className='skill-container'>
         <h2 className="section-title">SKILLS ABILITY</h2>

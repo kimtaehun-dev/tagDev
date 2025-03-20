@@ -54,8 +54,8 @@ const markanyWorkCardData = [
 
 export default function Carrer(){
   return (
-    <article className='carrer-frame'>
-      <ArticleTittle tittleText={"Carrer"}/>
+    <article className='carrer-frame' id="Career">
+      <ArticleTittle tittleText={"Career"}/>
       <div className='carrer-container'>
         <div className='company-desciption'>
           <div className='company-logo'>

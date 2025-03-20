@@ -5,7 +5,7 @@ export default function AboutMeArticle() {
 
   return (
     <article className='about-me-frame'>
-      <div className='app-main-tittle'>To the Front-end Developer</div>
+      <div className='app-main-tittle'>Front-end Developer</div>
       <Divider/>
       <div className='app-main-text'>
         <p className='intro-text text-type-1'>Hello,</p>

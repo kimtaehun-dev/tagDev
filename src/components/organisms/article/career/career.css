@@ -1,6 +1,7 @@
 .carrer-frame{
   width: 100%;
   color : var(--font-color);
+  padding-top: 4.5rem;
 }
 
 .carrer-container{

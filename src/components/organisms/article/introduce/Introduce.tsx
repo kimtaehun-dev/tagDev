@@ -31,7 +31,7 @@ const iconMap: Record<IconKey, JSX.Element> = {
 
 export default function Introduce(){
   return(
-    <article className="introduce-article">
+    <article className="introduce-article" id="Introduce">
       <div className="introduce-container">
         <ArticleTittle tittleText={"Introduce"}/>
         <div className='introduce-body'>
