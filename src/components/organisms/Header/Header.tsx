@@ -50,7 +50,7 @@ export default function Header() {
           ))}
         </div>
         <button className='header-contents-mobile-btn' type='button' onClick={handleNavSwitch}>
-          <img src='/src/assets/images/icons8-menu.svg' alt='Menu' />
+          <img src='/tagDev/images/icons8-menu.svg' alt='Menu' />
         </button>                                                                                                                                                   
       </div>
       <div className={`header-contents-mobile-nav ${isNavOpen?'act':''}`}>

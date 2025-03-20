@@ -6,7 +6,7 @@ export default function TopMoveBtn(){
   }
   return (
     <button type='button' className='scroll-move-top-button' onClick={handlePageUpClick}>
-      <img className='up-scroll-button-img' src='/src/assets/images/up-long-solid.svg'/>
+      <img className='up-scroll-button-img' src='/tagDev/images/up-long-solid.svg'/>
     </button>
   )
 }
