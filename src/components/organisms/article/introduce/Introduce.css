@@ -50,3 +50,10 @@
 .giturl:visited{
   color: inherit;
 }
+
+
+@media (max-width:768px){
+  .github-area{
+    margin-top : 3rem;
+  }
+}
