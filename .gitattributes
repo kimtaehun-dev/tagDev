@@ -1,0 +1,6 @@
+# 모든 타입스크립트 파일에서 LF를 유지
+*.ts text eol=lf
+*.tsx text eol=lf
+
+# 이전에 커밋/스테이징 된 파일을 이 파일에 작성된 줄바꿈으로 재설정.
+# git add --renormalize .
