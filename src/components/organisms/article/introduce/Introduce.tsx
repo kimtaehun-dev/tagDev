@@ -1,4 +1,4 @@
-import { FaUser, FaCalendarAlt, FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from "react-icons/fa";
+import { FaUser, FaCalendarAlt, FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaGithubSquare } from "react-icons/fa";
 
 import ArticleTittle from '../../../molecules/articleTittle/ArticleTittle'
 import IntroItemCard from '../../../molecules/IntroduceCard/IntroItemCard'
@@ -38,6 +38,17 @@ export default function Introduce(){
           {cardDatas.map((item,index)=>(
             <IntroItemCard key={index} icon={iconMap[item.icon]} tittle={item.CardTittle} value={item.CardValue}/>
           ))}
+          <a className="giturl"href="https://github.com/EnterRyan" target="_blank" >
+            <div className='github-area'>
+              <div className='github-tittle'>
+                <FaGithubSquare size={40}/>
+                <h2>GitHub</h2>
+              </div>
+              <div className='github-url'>
+                <p>https://github.com/EnterRyan</p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </article>
