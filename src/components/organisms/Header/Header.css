@@ -35,7 +35,7 @@ header {
 
 .header-items-default:hover{
   cursor: pointer;
-  color : hsla(0,0%,100%,.7);
+  color : #1E90FF;
 }
 
 /* Mobile & Scrolled Header */
@@ -95,7 +95,7 @@ header {
   background-color:#3A3A3D;
 }
 .header-contents-mobile-items:hover{
-  color : #fd7e14;
+  color : #1E90FF;
 }
 
 /* media query */
