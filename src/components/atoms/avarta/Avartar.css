@@ -10,3 +10,10 @@
   height: 90px;
   border-radius: 1rem;
 }
+
+@media (max-width: 768px){
+  .avartar-fame img{
+    width: 55px;
+    height: 55px;
+  }
+}
