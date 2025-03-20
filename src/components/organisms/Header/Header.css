@@ -27,6 +27,7 @@ header {
   flex-direction:row;
   gap:4rem;
   justify-content:flex-end;
+  margin-right: 2rem;
 }
 .header-items-default{
   color :#fff;

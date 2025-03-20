@@ -1,0 +1,12 @@
+.avartar-fame{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.avartar-fame img{
+  width: 90px;
+  height: 90px;
+  border-radius: 1rem;
+}

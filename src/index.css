@@ -1,13 +1,14 @@
 @import 'normalize.css';
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
-@font-face {
+/* @font-face {
   font-family: 'jalnanGothic';
   src: 
   url('/src/assets/fonts/JalnanGothic.otf') format('truetype'),
   url('/src/assets/fonts/YourFontName.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 :root{
   --font-size:16px; 
@@ -38,7 +39,7 @@ html {
 }
 
 body{
-  font-family: 'jalnanGothic', sans-serif;
+  font-family: 'Pretendard', sans-serif;
   background-color: #1b1b1e;
 }
 

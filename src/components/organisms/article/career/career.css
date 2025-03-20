@@ -1,0 +1,28 @@
+.carrer-frame{
+  width: 100%;
+  color : var(--font-color);
+}
+
+.carrer-container{
+  width: 70%;
+  max-width : 71rem;
+  display: flex;
+  margin : 0 auto;
+  flex-direction: row;
+}
+
+.company-desciption{
+  width: 25%;
+}
+
+.history{
+  width:75%;
+}
+.history h2{
+  padding-bottom: 0.5rem;
+}
+
+
+.company-logo{
+  margin-bottom : 2rem;
+}
