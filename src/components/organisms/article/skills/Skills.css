@@ -4,9 +4,9 @@
 }
 
 .skill-container{
-  width: 100%; 
+  width: 70%; 
   max-width : 71rem;
-  margin-left : 2rem;
+  margin: auto;
 }
 
 .section-title{
