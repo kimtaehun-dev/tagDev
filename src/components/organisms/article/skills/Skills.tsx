@@ -13,7 +13,7 @@ const skillCategories = [
   {
     tittle : "Tools/Analytics",
     skills : {
-      comfortable :  ['Vite', 'Git', 'Jira', 'Linux', 'Atomic Design'],
+      comfortable :  ['Vite', 'Git', 'Linux', 'Atomic Design'],
       usable :  [ 'Jira', 'Swagger(OpenAPI)', 'MVC','Docker' ],
       familiar :  ['Feature-Sliced Design (FSD)','Layered Architecture'],
     }
