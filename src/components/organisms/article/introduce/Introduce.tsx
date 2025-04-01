@@ -50,6 +50,7 @@ export default function Introduce(){
               </div>
             </div>
           </a>
+          {/* <IntroduceText/> */}
       </div>
     </article>
   )

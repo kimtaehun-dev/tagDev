@@ -1,0 +1,23 @@
+.text-box-frame{
+  width: 80%;
+  max-width: 71rem;
+  margin: 0 auto;
+  height: 20rem;
+  display: grid;
+  grid-template-columns: 3fr 7fr; /*비율단위*/
+  grid-template-rows: auto auto;
+  grid-template-areas:
+  "avatar title"
+  "avatar text";
+  
+}
+
+.profile-avatar{
+  grid-area : avatar;
+}
+.profile-title{
+  grid-area : title;
+}
+.profile-text{
+  grid-area : text;
+}
