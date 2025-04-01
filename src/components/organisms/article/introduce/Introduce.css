@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .icon-area svg {
@@ -42,12 +42,12 @@
   align-items: center;
 }
 
-.giturl{
+.git-url{
   text-decoration: none;
   margin: auto;
 }
 
-.giturl:visited{
+.git-url:visited{
   color: inherit;
 }
 

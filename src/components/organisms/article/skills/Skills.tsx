@@ -7,14 +7,14 @@ const skillCategories = [
     skills : {
       comfortable : ['JavaScript(ES6+)', 'TypeScript', 'HTML5', 'CSS3','React', 'React Hook Form'],
       usable : ['Redux & Redux Tool kits', 'Modern CSS'],
-      familiar : ['Node.js','Express', 'Java', 'NSISScript', 'Tanstack Query']
+      familiar : ['Node.js','Express', 'Java', 'NSISScript', 'Tanstack Query','Next.js']
     }
   },
   {
     tittle : "Tools/Analytics",
     skills : {
       comfortable :  ['Vite', 'Git', 'Linux', 'Atomic Design'],
-      usable :  [ 'Jira', 'Swagger(OpenAPI)', 'MVC','Docker' ],
+      usable :  [ 'Jira', 'Swagger(OpenAPI)', 'MVC','Docker','Notion' ],
       familiar :  ['Feature-Sliced Design (FSD)','Layered Architecture'],
     }
   }
