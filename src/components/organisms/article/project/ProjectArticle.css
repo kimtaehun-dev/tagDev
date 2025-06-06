@@ -1,0 +1,60 @@
+.project-frame {
+  width: 70%;
+  margin: auto;
+  min-height: 100vh;
+  color: #F0F0F0;
+  scroll-margin-top: 80px;
+}
+
+.project-frame h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-content-wrapper {
+  margin-top: 2rem;
+  background-color: #2A2A2A;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* 다른 아티클들과 동일한 스타일을 사용하기 위해 app-main-tittle 클래스는 전역 스타일을 사용합니다 */
+
+.app-main-tittle {
+  padding-top: 150px;
+  font-size: 25;
+}
+
+.app-main-text {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.app-main-text > p {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  margin: 1rem;
+}
+
+@media (max-width: 768px) {
+  .app-main-tittle {
+    padding-top: 300px;
+    font-size: 1.5rem;
+  }
+
+  .app-main-text {
+    padding-top: 1rem;
+  }
+
+  .project-content-wrapper {
+    padding: 1.5rem;
+  }
+} 

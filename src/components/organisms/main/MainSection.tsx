@@ -1,6 +1,7 @@
 import AboutMeArticle from '../article/AboutMe/AboutMeArticle';
 import Carrer from '../article/career/Career';
 import Introduce from '../article/introduce/Introduce';
+import ProjectArticle from '../article/project/ProjectArticle';
 import Skills from '../article/skills/Skills';
 import './mainSection.css';
 
@@ -11,6 +12,7 @@ export default function MainSection(){
       <Introduce />
       <Skills />
       <Carrer />
+      <ProjectArticle />
     </main>
   )
 }

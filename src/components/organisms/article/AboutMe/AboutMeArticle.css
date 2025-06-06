@@ -3,6 +3,7 @@
   margin: auto;
   height: calc(100vh);
   color : #F0F0F0;
+  position: relative;
 }
 
 .app-main-tittle{
@@ -14,7 +15,10 @@
 /* 처음부터 다시하는거야 */
 
 .app-main-text {
-  padding-top: 20rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -64,9 +68,5 @@
   .app-main-tittle {
     padding-top: 300px;
     font-size: 1.5rem; 
-  }
-
-  .app-main-text {
-    padding-top: 10rem; /* bottom 대신 padding-top 사용 */
   }
 }
