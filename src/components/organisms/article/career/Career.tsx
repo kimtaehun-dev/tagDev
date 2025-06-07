@@ -76,7 +76,7 @@ export default function Carrer(){
             <Avatar imagePath='/tagDev/images/markany_logo.jpg' avatarName='마크애니'/>
           </div>
           <div className='company-text'>
-            <p>2020.03 ~ 재직 중</p>
+            <p>2020.03 ~ 2025.06</p>
           </div>
         </div>
         <div className='history'>

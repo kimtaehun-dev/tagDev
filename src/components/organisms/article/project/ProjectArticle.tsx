@@ -14,11 +14,11 @@ type Project = {
 const projects: Project[] = [
   {
     title: "TagDev",
-    description: "개인 히스토리를 담은 포트폴리오 페이지 입니다. 프로젝트 소개, 기술 스택, 프로젝트 기간, 주요 기능 등을 포함합니다.",
+    description: "개인 히스토리를 담은 포트폴리오 페이지 입니다.\n프로젝트 소개, 기술 스택, 프로젝트 기간, 주요 기능 등을 포함하며 멀티 디바이스를 고려하여 제작되었습니다.",
     images: [
       "/tagDev/images/projects/tagDev/tagDevThumbnail.png",
-      "/tagDev/images/projects/tagDev/tagDevThumbnail.png",
-      "/tagDev/images/projects/tagDev/tagDevThumbnail.png"
+      "/tagDev/images/projects/tagDev/viewMobile.png",
+      "/tagDev/images/projects/tagDev/viewPC.png"
     ],
     tags: ["React", "TypeScript", "Vite", "CSS"]
   },
@@ -26,20 +26,51 @@ const projects: Project[] = [
     title: "Jira Management",
     description: "부서에서 지라 사용에 익숙하지 않은 사용자들이 일관된 데이터를 입력하기 위한 관리자 페이지 입니다.",
     images: [
-      "/tagDev/images/projects/jiraManageMent/메인페이지.png",
-      "/tagDev/images/projects/jiraManageMent/메인페이지 다크모드.png",
-      "/tagDev/images/projects/jiraManageMent/상세페이지.png",
-      "/tagDev/images/projects/jiraManageMent/프로젝트 생성 페이지.png",
-      "/tagDev/images/projects/jiraManageMent/사이드 네비게이터.png",
-      "/tagDev/images/projects/jiraManageMent/상세검색필터.png",
-      "/tagDev/images/projects/jiraManageMent/like검색진행.png",
-      "/tagDev/images/projects/jiraManageMent/로그인.png",
-      "/tagDev/images/projects/jiraManageMent/로그인 입력X.png",
-      "/tagDev/images/projects/jiraManageMent/로그인실패.png",
-      "/tagDev/images/projects/jiraManageMent/검색결과X.png",
-      "/tagDev/images/projects/jiraManageMent/필수입력 체크.png"
+      "/tagDev/images/projects/jiraManageMent/login.png",
+      "/tagDev/images/projects/jiraManageMent/loginError1.png",
+      "/tagDev/images/projects/jiraManageMent/loginError2.png",
+      "/tagDev/images/projects/jiraManageMent/mainpageLight.png",
+      "/tagDev/images/projects/jiraManageMent/mainpageDark.png",
+      "/tagDev/images/projects/jiraManageMent/sideNav.png",
+      "/tagDev/images/projects/jiraManageMent/likeSearch.png",
+      "/tagDev/images/projects/jiraManageMent/searchfilter.png",
+      "/tagDev/images/projects/jiraManageMent/createProject.png",
+      "/tagDev/images/projects/jiraManageMent/createForm.png",
+      "/tagDev/images/projects/jiraManageMent/detailpage.png"
     ],
-    tags: ["React", "TypeScript", "Vite", "react-hook-form", "google-mui"]
+    tags: ["React", "TypeScript", "Vite", "react-hook-form", "google-Mui"]
+  },
+    {
+    title: "e-PageSAFER fot SPA NoAX",
+    description: "ePageSAFER NoAX를 SPA+RestApi환경에 제공하기 위한 마이그레이션 입니다.",
+    images: [
+      "/tagDev/images/projects/ePageSAFER_SPA/mainSample.png",
+      "/tagDev/images/projects/ePageSAFER_SPA/installCheck.png",
+      "/tagDev/images/projects/ePageSAFER_SPA/Error.png",
+      "/tagDev/images/projects/ePageSAFER_SPA/getInstall.png",
+      "/tagDev/images/projects/ePageSAFER_SPA/runView.png",
+    ],
+    tags: ["React", "TypeScript", "google-Mui","WebScoket"]
+  },
+  {
+    title: "e-PageSAFER Zero-Client for Mail",
+    description: "웹 표준 방식 ePageSAFER를 메일 솔루션과 연동하기 위한 프로젝트 입니다.",
+    images: [
+      "/tagDev/images/projects/ePageSAFER_SPA/mainSample.png",
+      "/tagDev/images/projects/ePageSAFER_SPA/installCheck.png",
+      "/tagDev/images/projects/ePageSAFER_SPA/Error.png",
+      "/tagDev/images/projects/ePageSAFER_SPA/getInstall.png",
+      "/tagDev/images/projects/ePageSAFER_SPA/runView.png",
+    ],
+    tags: ["HTML", "CSS","JavaScript", "java"]
+  },
+  {
+    title: "My blog Project",
+    description: "Notion Api를 활용한 블로그만들기 프로젝트입니다.(진행중)",
+    images: [
+      "/tagDev/images/projects/tagDev/tagDevThumbnail.png",
+    ],
+    tags: ["Nextjs", "tailwindCss","Vercel", "TanstackQuery"]
   }
 ];
 

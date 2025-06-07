@@ -17,8 +17,7 @@ export default function ProjectCard({ project, onClick }: ProjectCardProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div 
-      className="project-card"
+    <div className="project-card"
       onClick={onClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -33,7 +32,7 @@ export default function ProjectCard({ project, onClick }: ProjectCardProps) {
       </div>
       <div className="project-info">
         <h3>{project.title}</h3>
-        <p>{project.description}</p>
+        <p style={{ whiteSpace: 'pre-line' }}>{project.description}</p>
         <div className="project-tags">
           {project.tags.map((tag: string, index: number) => (
             <span key={index} className="tag">
