@@ -24,7 +24,7 @@ const projects: Project[] = [
   },
   {
     title: "Jira Management",
-    description: "부서에서 지라 사용에 익숙하지 않은 사용자들이 일관된 데이터를 입력하기 위한 관리자 페이지 입니다.",
+    description: "JIRA를 처음 사용하는 부서내 사용자들이 일관된 데이터를 입력하기 위한 관리자 페이지 입니다.",
     images: [
       "/tagDev/images/projects/jiraManageMent/login.png",
       "/tagDev/images/projects/jiraManageMent/loginError1.png",
@@ -42,7 +42,7 @@ const projects: Project[] = [
   },
     {
     title: "e-PageSAFER fot SPA NoAX",
-    description: "ePageSAFER NoAX를 SPA+RestApi환경에 제공하기 위한 마이그레이션 입니다.",
+    description: "ePageSAFER NoAX(위변조방지 솔루션)를 SPA+RestApi환경에 제공하기 위한 마이그레이션 입니다.",
     images: [
       "/tagDev/images/projects/ePageSAFER_SPA/mainSample.png",
       "/tagDev/images/projects/ePageSAFER_SPA/installCheck.png",
@@ -54,7 +54,7 @@ const projects: Project[] = [
   },
   {
     title: "e-PageSAFER Zero-Client for Mail",
-    description: "웹 표준 방식 ePageSAFER를 메일 솔루션과 연동하기 위한 프로젝트 입니다.",
+    description: "ePageSAFER(위변조방지 솔루션) 웹표준버전을 메일 솔루션과 연동하기 위한 프로젝트 입니다.",
     images: [
       "/tagDev/images/projects/ePageSAFER_SPA/mainSample.png",
       "/tagDev/images/projects/ePageSAFER_SPA/installCheck.png",

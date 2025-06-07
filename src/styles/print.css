@@ -1,0 +1,76 @@
+@media print {
+  /* 기본 스타일 */
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12pt;
+  }
+
+  /* 모든 요소에 대해 배경색과 텍스트 색상 강제 적용 */
+  * {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* 링크 스타일 */
+  a {
+    text-decoration: underline;
+    color: #0000ff !important;
+  }
+
+  /* 이미지 최적화 */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  /* 페이지 나누기 방지 */
+  .project-card,
+  .skill-category,
+  .work-card {
+    page-break-inside: avoid;
+  }
+
+  /* 불필요한 요소 숨기기 */
+  .modal-overlay,
+  .project-overlay,
+  .close-button,
+  .image-controls {
+    display: none !important;
+  }
+
+  /* 레이아웃 조정 */
+  .project-grid,
+  .skill-container,
+  .carrer-container {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* 여백 조정 */
+  .project-article,
+  .skills-frame,
+  .carrer-frame {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* 배지 스타일 */
+  .badge {
+    border: 1px solid #000 !important;
+    background: white !important;
+    color: black !important;
+  }
+
+  .badge-comfortable,
+  .badge-usable,
+  .badge-familiar {
+    background: white !important;
+    color: black !important;
+    border: 1px solid #000 !important;
+  }
+} 

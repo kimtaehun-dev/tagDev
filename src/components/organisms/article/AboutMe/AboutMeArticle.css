@@ -66,7 +66,11 @@
 
 @media (max-width: 768px) {
   .app-main-tittle {
-    padding-top: 300px;
+    padding-top: 150px;
     font-size: 1.5rem; 
+  }
+  
+  .app-main-text {
+    top: 60%;
   }
 }
