@@ -3,6 +3,7 @@ header {
   width: 100%;
   height: 4.5rem;
   position: fixed;
+  z-index: 1000;
 }
 .header-container-common{
   width: 100%;
@@ -16,6 +17,12 @@ header {
 .header-tittle{
   font-size: 1.5rem;
   margin : 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-tittle:hover {
+  color: #1E90FF;
 }
 
 /* default(PC & noScroll) Header */
@@ -31,10 +38,11 @@ header {
 }
 .header-items-default{
   color :#fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .header-items-default:hover{
-  cursor: pointer;
   color : #1E90FF;
 }
 
@@ -50,10 +58,11 @@ header {
 }
 .header-items-optional{
   color :#F0F0F0;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .header-items-optional:hover{
-  cursor: pointer;
   color : #1E90FF;
 }
 
@@ -65,6 +74,12 @@ header {
   width: 40px;
   height: 40px;
   margin-right: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.header-contents-mobile-btn:hover {
+  opacity: 0.8;
 }
 
 .header-contents-mobile-btn img {
@@ -81,6 +96,7 @@ header {
   height: 0;
   overflow: auto;
   transition: height 0.3s ease;
+  background-color: #3A3A3D;
 }
 
 .act {
@@ -93,9 +109,12 @@ header {
   padding:1rem;
   color : #F0F0F0;
   background-color:#3A3A3D;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 .header-contents-mobile-items:hover{
   color : #1E90FF;
+  background-color: #2A2A2A;
 }
 
 /* media query */
