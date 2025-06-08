@@ -56,11 +56,9 @@ const projects: Project[] = [
     title: "e-PageSAFER Zero-Client for Mail",
     description: "ePageSAFER(위변조방지 솔루션) 웹표준버전을 메일 솔루션과 연동하기 위한 프로젝트 입니다.",
     images: [
-      "/tagDev/images/projects/ePageSAFER_SPA/mainSample.png",
-      "/tagDev/images/projects/ePageSAFER_SPA/installCheck.png",
-      "/tagDev/images/projects/ePageSAFER_SPA/Error.png",
-      "/tagDev/images/projects/ePageSAFER_SPA/getInstall.png",
-      "/tagDev/images/projects/ePageSAFER_SPA/runView.png",
+      "/tagDev/images/projects/zero-mail/mainPc.png",
+      "/tagDev/images/projects/zero-mail/mobileAndroid.png",
+      "/tagDev/images/projects/zero-mail/mobileIOS.png",
     ],
     tags: ["HTML", "CSS","JavaScript", "java"]
   },
@@ -69,6 +67,7 @@ const projects: Project[] = [
     description: "Notion Api를 활용한 블로그만들기 프로젝트입니다.(진행중)",
     images: [
       "/tagDev/images/projects/tagDev/tagDevThumbnail.png",
+      "/tagDev/images/projects/notionBlog/notionDB.png",
     ],
     tags: ["Nextjs", "tailwindCss","Vercel", "TanstackQuery"]
   }
