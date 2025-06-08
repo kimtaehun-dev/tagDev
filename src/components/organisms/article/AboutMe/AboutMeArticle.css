@@ -13,7 +13,6 @@
 
 
 /* 처음부터 다시하는거야 */
-
 .app-main-text {
   position: absolute;
   top: 50%;
@@ -63,6 +62,11 @@
   color : #1E90FF;
 }
 
+.intro-print-text{
+  font-size: 1rem !important;
+  color: #F0F0F0 !important;
+  display: none;
+}
 
 @media (max-width: 768px) {
   .app-main-tittle {
