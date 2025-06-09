@@ -2,6 +2,7 @@ import './career.css';
 import ArticleTittle from '../../../molecules/articleTittle/ArticleTittle';
 import Avatar from '../../../atoms/avarta/Avatar';
 import WorkCard from '../../../molecules/workCard/workCard';
+import WorkAchievements from '../../../molecules/workAchievements/WorkAchievements';
 
 const markanyWorkCardData = [
   {
@@ -77,6 +78,9 @@ export default function Carrer(){
           </div>
           <div className='company-text'>
             <p>2020.03 ~ 2025.06</p>
+          </div>
+          <div className='work-achievements'>
+            <WorkAchievements />
           </div>
         </div>
         <div className='history'>
