@@ -1,8 +1,6 @@
 .work-achievements {
   background: #1A1A1A;
   border-radius: 12px;
-  padding: 2rem;
-  margin: 2rem 0;
   color: #F0F0F0;
 }
 
@@ -48,10 +46,6 @@
 }
 
 @media (max-width: 768px) {
-  .work-achievements {
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-  }
 
   .work-achievements h3 {
     font-size: 1.3rem;

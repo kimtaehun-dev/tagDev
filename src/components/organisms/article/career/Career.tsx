@@ -75,9 +75,9 @@ export default function Carrer(){
         <div className='company-desciption'>
           <div className='company-logo'>
             <Avatar imagePath='/tagDev/images/markany_logo.jpg' avatarName='마크애니'/>
-          </div>
-          <div className='company-text'>
-            <p>2020.03 ~ 2025.06</p>
+            <div className='company-text'>
+              <p>2020.03 ~ 2025.06</p>
+            </div>
           </div>
           <div className='work-achievements'>
             <WorkAchievements />
