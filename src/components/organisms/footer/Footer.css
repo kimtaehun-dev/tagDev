@@ -1,7 +1,17 @@
-footer{
+footer {
   width: 100%;
-  padding: 3rem;
+  padding: 2rem 0;
   text-align: center;
-  background-color: black;
-  color: aliceblue;
+  color: #A0A0A0;
+  font-size: 0.9rem;
+  background-color: #1A1A1A;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+.last-update {
+  font-size: 0.8rem;
+  color: #808080;
 }
