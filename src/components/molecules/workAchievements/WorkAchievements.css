@@ -2,16 +2,17 @@
   background: #1A1A1A;
   border-radius: 12px;
   color: #F0F0F0;
+  padding: 1.2rem;
 }
 
 .work-achievements h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
   color: #1E90FF;
 }
 
 .achievement-section {
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
 }
 
 .achievement-section:last-child {
@@ -19,22 +20,23 @@
 }
 
 .achievement-section h4 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
   color: #F0F0F0;
 }
 
 .achievement-section ul {
   list-style-type: none;
-  padding-left: 1rem;
+  padding-left: 0.8rem;
 }
 
 .achievement-section li {
   position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 0.8rem;
+  padding-left: 1.2rem;
+  margin-bottom: 0.5rem;
   line-height: 1.5;
   color: #A0A0A0;
+  font-size: 0.95rem;
 }
 
 .achievement-section li:before {
@@ -42,17 +44,16 @@
   color: #1E90FF;
   position: absolute;
   left: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 768px) {
-
   .work-achievements h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .achievement-section h4 {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
   }
 
   .achievement-section li {
