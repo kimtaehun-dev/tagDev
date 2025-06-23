@@ -1,4 +1,4 @@
-.about-me-frame{
+.thumbnail-frame{
   width: 70%;
   margin: auto;
   height: calc(100vh);
@@ -6,14 +6,14 @@
   position: relative;
 }
 
-.app-main-tittle{
+.thumbnail-tittle{
   padding-top: 150px;
   font-size: 25;
 }
 
 
 /* 처음부터 다시하는거야 */
-.app-main-text {
+.thumbnail-text-box {
   position: absolute;
   top: 50%;
   left: 0;
@@ -23,7 +23,7 @@
   align-items: flex-start;
 }
 
-.intro-text {
+.thumbnail-text {
   white-space: nowrap;
   overflow: hidden;
 }
@@ -51,30 +51,30 @@
 /* ---------------------------------------------- */
 
 
-.app-main-text > p {
+.thumbnail-text-box > p {
   /* 디바이스 최적화 최소 1.2rem, 최대 2rem */
   font-size: clamp(1.2rem, 4vw, 2rem); 
   margin: 1rem;
 }
 
 
-.app-main-text span{
+.thumbnail-text-box span{
   color : #1E90FF;
 }
 
-.intro-print-text{
+.thumbnail-print-text{
   font-size: 1rem !important;
   color: #F0F0F0 !important;
   display: none;
 }
 
 @media (max-width: 768px) {
-  .app-main-tittle {
+  .thumbnail-tittle {
     padding-top: 150px;
     font-size: 1.5rem; 
   }
   
-  .app-main-text {
+  .thumbnail-text-box {
     top: 60%;
   }
 }

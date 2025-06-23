@@ -1,0 +1,97 @@
+.aboutme-frame{
+  width: 100%;
+  color : var(--font-color);
+  padding-top: 4.5rem;
+}
+
+.aboutme-container{
+  width: 70%;
+  max-width : 71rem;
+  display: flex;
+  margin : 0 auto;
+  flex-direction: column;
+  gap : 3rem;
+}
+
+.aboutme-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem;
+  background: var(--background-color);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  flex-shrink: 0;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary-color);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.greeting-section {
+  flex: 1;
+}
+
+.greeting-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0 0 1.5rem 0;
+  color: var(--primary-color);
+}
+
+.greeting-content {
+  line-height: 1.8;
+}
+
+.greeting-content p {
+  margin: 0 0 1.2rem 0;
+  font-size: 1.1rem;
+  color: var(--font-color);
+  text-align: justify;
+}
+
+.greeting-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .aboutme-container {
+    width: 90%;
+    gap: 2rem;
+  }
+  
+  .aboutme-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .greeting-title {
+    font-size: 1.8rem;
+  }
+  
+  .greeting-content p {
+    text-align: left;
+    font-size: 1rem;
+  }
+}
