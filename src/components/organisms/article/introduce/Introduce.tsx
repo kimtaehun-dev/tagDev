@@ -12,7 +12,7 @@ import './Introduce.css'
 const cardDatas: { icon: IconKey; CardTittle: string; CardValue: string }[] = [
   { icon: "프로필아이콘", CardTittle: "이름", CardValue: "김태헌" },
   { icon: "달력아이콘", CardTittle: "생년월일", CardValue: "95.09.21" },
-  { icon: "주소아이콘", CardTittle: "주소", CardValue: "서울" },
+  { icon: "주소아이콘", CardTittle: "주소", CardValue: "서울 강서구" },
   { icon: "전화아이콘", CardTittle: "전화번호", CardValue: "010-8684-6599" },
   { icon: "편지지아이콘", CardTittle: "이메일", CardValue: "changetodev@gmail.com" },
   { icon: "기간아이콘", CardTittle: "총 경력", CardValue: "4년" },

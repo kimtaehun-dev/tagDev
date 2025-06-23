@@ -31,7 +31,7 @@ export default function WorkCard({tittle, skill, text, participants, contributio
       {purpose && (
         <div className='card-purpose'>
           <h4>개발 목적</h4>
-          <p>{purpose}</p>
+          <p className='whitespace-pre-line'>{purpose}</p>
         </div>
       )}
       <div className='card-text'>
@@ -42,7 +42,7 @@ export default function WorkCard({tittle, skill, text, participants, contributio
       {achievement && (
         <div className='card-achievement'>
           <h4>주요 성과</h4>
-          <p>{achievement}</p>
+          <p className='whitespace-pre-line'>{achievement}</p>
         </div>
       )}
     </div>
