@@ -1,12 +1,6 @@
 import { useState } from 'react';
 import './ProjectModal.css';
-
-type Project = {
-  title: string;
-  description: string;
-  images: string[];
-  tags: string[];
-};
+import type { Project } from '../../organisms/article/project/ProjectArticle';
 
 type ProjectModalProps = {
   project: Project;
@@ -34,7 +28,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         <button className="close-button" onClick={onClose}>×</button>
         <div className="modal-body">
           <div className="modal-image">
-            <img src={project.images[currentImageIndex]} alt={`${project.title} screenshot ${currentImageIndex + 1}`} />
+            <img src={project.images[currentImageIndex].src} alt={`${project.title} screenshot ${currentImageIndex + 1}`} />
             {project.images.length > 1 && (
               <div className="image-controls">
                 <button onClick={handlePrevImage} className="image-nav-button">←</button>
@@ -45,7 +39,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           </div>
           <div className="modal-info">
             <h2>{project.title}</h2>
-            <p>{project.description}</p>
+            <p>{project.images[currentImageIndex].caption}</p>
             <div className="project-tags">
               {project.tags.map((tag: string, index: number) => (
                 <span key={index} className="tag">

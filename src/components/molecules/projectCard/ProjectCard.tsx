@@ -1,12 +1,6 @@
 import { useState } from 'react';
 import './ProjectCard.css';
-
-type Project = {
-  title: string;
-  description: string;
-  images: string[];
-  tags: string[];
-};
+import type { Project } from '../../organisms/article/project/ProjectArticle';
 
 type ProjectCardProps = {
   project: Project;
@@ -23,7 +17,7 @@ export default function ProjectCard({ project, onClick }: ProjectCardProps) {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="project-image-container">
-        <img src={project.images[0]} alt={project.title} className="project-image" />
+        <img src={project.images[0].src} alt={project.title} className="project-image" />
         {isHovered && (
           <div className="project-overlay">
             <span className="view-details">View Details</span>
