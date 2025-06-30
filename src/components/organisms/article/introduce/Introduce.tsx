@@ -39,17 +39,17 @@ export default function Introduce(){
             <IntroItemCard key={index} icon={iconMap[item.icon]} tittle={item.CardTittle} value={item.CardValue}/>
           ))}
         </div>
-          <a className="git-url"href="https://github.com/EnterRyan" target="_blank" >
-            <div className='github-area'>
-              <div className='github-tittle'>
-                <FaGithubSquare size={40}/>
-                <h2>GitHub</h2>
-              </div>
-              <div className='github-url'>
-                <p>https://github.com/EnterRyan</p>
-              </div>
+          <div className='github-area'>
+            <a className="git-url"href="https://github.com/EnterRyan" target="_blank" >
+            <div className='github-tittle'>
+              <FaGithubSquare size={40}/>
+              <h2>GitHub</h2>
             </div>
-          </a>
+            <div className='github-url'>
+              <p>https://github.com/EnterRyan</p>
+            </div>
+            </a>
+          </div>
           {/* <IntroduceText/> */}
       </div>
     </article>

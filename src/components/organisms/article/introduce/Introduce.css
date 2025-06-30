@@ -40,17 +40,21 @@
 .github-tittle{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .git-url{
   text-decoration: none;
   margin: auto;
+  color: var(--font-color) !important;
 }
 
-.git-url:visited{
-  color: inherit;
+.git-url:link,
+.git-url:visited,
+.git-url:hover,
+.git-url:active {
+  color: var(--font-color) !important;
 }
-
 
 @media (max-width:768px){
   .github-area{
