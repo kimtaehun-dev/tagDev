@@ -76,11 +76,13 @@ const projects: Project[] = [
   },
   {
     title: "My blog Project",
-    description: "Notion Api를 활용한 블로그만들기 프로젝트입니다.(진행중)",
+    description: "Notion Api를 활용한 블로그만들기 프로젝트입니다.",
     images: [
       { src: "/tagDev/images/projects/notionBlog/notionDB.png", caption: "Notion DB 구성 및 NotionApi를 통한 연동작업" },
       { src: "/tagDev/images/projects/notionBlog/mainPage.png", caption: "Grid/Flex를 통한 와이어 프레임 및 atricle 포지셔닝" },
       { src: "/tagDev/images/projects/notionBlog/vercel.png", caption: "vercel을 통한 배포 및 Analytics로 모니터링" },
+      { src: "/tagDev/images/projects/notionBlog/infiniteScroll.png", caption: "TanstackQuery+ObserverDiv 무한스크롤" },
+      { src: "/tagDev/images/projects/notionBlog/DarkMode.png", caption: "TailwindCSS를 통한 DarkMode" },
     ],
     tags: ["Nextjs", "tailwindCss","Vercel", "TanstackQuery"]
   }
