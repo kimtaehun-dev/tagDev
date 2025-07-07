@@ -7,7 +7,7 @@ const skillCategories = [
     skills : {
       comfortable : ['HTML5/CSS3','JavaScript(ES6+)', 'TypeScript','React', 'React Hook Form'],
       familiar : ['Next.js','Tanstack Query','Tailwind CSS',],
-      usable : ['Express', 'Java', 'NSISScript','Redux & Redux Tool kits']
+      usable : ['Express', 'Java', 'NSISScript','Redux & Redux Tool kits','Mui','shadcn/ui']
     }
   },
   {
@@ -21,7 +21,7 @@ const skillCategories = [
   {
     tittle : "Design Pattern",
     skills :{
-      comfortable :  ['Atomic Design','Feature-Sliced Design (FSD)'],
+      comfortable :  ['Atomic Design','Feature-Sliced Design (FSD)','Feature-Based Architecture'],
       usable :  [ '(Spring)MVC','(express)Layered Architecture'],
     }
   }
