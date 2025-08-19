@@ -13,6 +13,14 @@ export type Project = {
 
 const projects: Project[] = [
   {
+    title: "Yottaeyo(MVP단계)",
+    description: "AI를 활용한 일정 추천 서비스 입니다.",
+    images: [
+      { src: "/tagDev/images/projects/yottaeyo/introduce.png", caption: "캘린더 페이지와 Feed페이지 개발에 참여 하였습니다." },
+    ],
+    tags: ["Next.js", "TypeScript", "Shadcn", "TailwindCSS4","TanstackQuery","ky"]
+  },
+  {
     title: "TagDev",
     description: "개인 포트폴리오 페이지 입니다.\n프로젝트 소개, 기술 스택, 프로젝트 기간, 주요 기능을 소개합니다.",
     images: [

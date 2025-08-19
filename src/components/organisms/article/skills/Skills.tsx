@@ -6,7 +6,7 @@ const skillCategories = [
     tittle : "Language/Framework/Library",
     skills : {
       comfortable : ['HTML5/CSS3','JavaScript(ES6+)', 'TypeScript','React', 'React Hook Form'],
-      familiar : ['Next.js','Tanstack Query','Tailwind CSS',],
+      familiar : ['Next.js','Tanstack Query','Tailwind CSS','ky'],
       usable : ['Express', 'Java', 'NSISScript','Redux & Redux Tool kits','Mui','shadcn/ui']
     }
   },

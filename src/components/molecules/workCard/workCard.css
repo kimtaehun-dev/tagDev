@@ -76,13 +76,13 @@
   color: #E0E0E0;
 }
 
-.card-text p::before {
+/* .card-text p::before {
   content: "•";
   position: absolute;
   left: 0;
   color: #1E90FF;
   font-size: 1rem;
-}
+} */
 
 .card-achievement {
   margin-top: 0.8rem;
@@ -110,4 +110,67 @@
   left: 0;
   color: #1E90FF;
   font-size: 0.95rem;
+}
+
+/* Issue/Resolution 리스트 */
+.ir-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ir-pair {
+  background: #1a1a1a;
+  border: 1px solid #3a3a3a;
+  border-radius: 6px;
+  padding: 10px 12px;
+  display: grid;
+  gap: 8px;
+}
+
+/* 각 행: [라벨] [내용] 2열 */
+.ir-row {
+  display: grid;
+  grid-template-columns: 64px 1fr; /* 라벨 고정폭 */
+  align-items: start;
+  gap: 10px;
+}
+
+.ir-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  padding: 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.ir-badge-issue {
+  background: #3a2323;
+  color: #ffb3b3;
+  border: 1px solid #6b2a2a;
+}
+
+.ir-badge-solution {
+  background: #203528;
+  color: #a7f0c0;
+  border: 1px solid #2a6b46;
+}
+
+.ir-text {
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* 데스크탑에서 행간 넓게, 문장 가독성 향상 */
+@media (min-width: 768px) {
+  .ir-text { line-height: 1.6; }
+  .ir-row { grid-template-columns: 72px 1fr; }
 }

@@ -1,21 +1,43 @@
 import './workCard.css'
-
+type TextTpye={
+  issue:string; 
+  resolution:string;
+}
 type WorkCardType = {
   tittle : string;
+  during:string;
   skill:string[];
-  text :string[];
+  text :TextTpye[];
   participants?: number;
   contribution?: string;
   achievement?: string;
   purpose?: string;
 }
+function IssueResolutionList({ items }: { items: TextTpye[] }) {
+  return (
+    <ul className="ir-list">
+      {items.map((it, i) => (
+        <li key={i} className="ir-pair">
+          <div className="ir-row">
+            <span className="ir-badge ir-badge-issue">문제</span>
+            <p className="ir-text">{it.issue}</p>
+          </div>
+          <div className="ir-row">
+            <span className="ir-badge ir-badge-solution">해결</span>
+            <p className="ir-text">{it.resolution}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
-export default function WorkCard({tittle, skill, text, participants, contribution, achievement, purpose}:WorkCardType){
-  console.log(achievement);
+export default function WorkCard({tittle,during, skill, text, participants, contribution, achievement, purpose}:WorkCardType){
   return (
     <div className='work-card-frame'>
       <div className='card-tittle'>
         <p> ■ {tittle}</p>
+        <p>{during}</p>
         <div className='container-card-skill'>
           {skill.map((item, index)=>(
             <span className='card-skill' key={`${item}${index}`}>{item}</span>
@@ -35,9 +57,7 @@ export default function WorkCard({tittle, skill, text, participants, contributio
         </div>
       )}
       <div className='card-text'>
-        {text.map((item,index)=>(
-          <p key={index}>{item}</p>
-        ))}
+        <IssueResolutionList items={text} />
       </div>
       {achievement && (
         <div className='card-achievement'>
