@@ -18,7 +18,7 @@ export default function AboutMe(){
             <h3 className='greeting-title'>안녕하세요! 👋</h3>
             <div className='greeting-content'>
               <p>
-                4년차 프론트엔드 개발자 김태헌입니다.<br/> 
+                6년차 프론트엔드 개발자 김태헌입니다.<br/>
                 기획과 구조 설계에서부터 사용자 중심의 흐름을 만들기 위해 고민하고 실천합니다.<br/>
                 구조화된 설계와 컴포넌트 분리에 흥미를 느끼며, 프론트엔드 개발자가 가져야할 UX감각에 관심이 있어 <br/>
                 의도 있는 경험을 구현하고자 도전합니다.

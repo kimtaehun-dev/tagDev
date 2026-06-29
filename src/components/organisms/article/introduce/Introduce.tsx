@@ -15,7 +15,7 @@ const cardDatas: { icon: IconKey; CardTittle: string; CardValue: string }[] = [
   { icon: "주소아이콘", CardTittle: "주소", CardValue: "서울 강서구" },
   { icon: "전화아이콘", CardTittle: "전화번호", CardValue: "010-8684-6599" },
   { icon: "편지지아이콘", CardTittle: "이메일", CardValue: "changetodev@gmail.com" },
-  { icon: "기간아이콘", CardTittle: "총 경력", CardValue: "4년" },
+  { icon: "기간아이콘", CardTittle: "총 경력", CardValue: "6년" },
 ];
 
 type IconKey = "프로필아이콘" | "달력아이콘" | "주소아이콘" | "전화아이콘" | "편지지아이콘" | "기간아이콘";
@@ -40,13 +40,13 @@ export default function Introduce(){
           ))}
         </div>
           <div className='github-area'>
-            <a className="git-url"href="https://github.com/EnterRyan" target="_blank" >
+            <a className="git-url"href="https://github.com/kimtaehun-dev" target="_blank" >
             <div className='github-tittle'>
               <FaGithubSquare size={40}/>
               <h2>GitHub</h2>
             </div>
             <div className='github-url'>
-              <p>https://github.com/EnterRyan</p>
+              <p>https://github.com/kimtaehun-dev</p>
             </div>
             </a>
           </div>
