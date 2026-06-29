@@ -5,23 +5,24 @@ const skillCategories = [
   {
     tittle : "Language/Framework/Library",
     skills : {
-      comfortable : ['HTML5/CSS3','JavaScript(ES6+)', 'TypeScript','React', 'React Hook Form'],
-      familiar : ['Next.js','Tanstack Query','Tailwind CSS','ky'],
-      usable : ['Express', 'Java', 'NSISScript','Redux & Redux Tool kits','Mui','shadcn/ui']
+      comfortable : ['HTML5/CSS3','JavaScript(ES6+)', 'TypeScript','React', 'Next.js', 'React Hook Form', 'Tailwind CSS 4','Redux & Redux Tool kits'],
+      familiar : ['Tanstack Query','ky','NextAuth','Zustand'],
+      usable : ['Express', 'Java', 'NSISScript','Mui','shadcn/ui','tossPayments']
     }
   },
   {
     tittle : "Tools",
     skills : {
       comfortable :  ['Notion','Vite', 'Git', 'Linux',],
-      familiar :  [ 'Jira', 'Swagger(OpenAPI)', 'Docker'],
-      usable :  ['V0', 'vercel'],
+      familiar :  [ 'Jira', 'Swagger(OpenAPI)', 'Docker', 'StoryBook', 'Figma'],
+      usable :  ['V0', 'vercel', 'Claude Code', 'Figma MCP'],
     }
   },
   {
     tittle : "Design Pattern",
     skills :{
       comfortable :  ['Atomic Design','Feature-Sliced Design (FSD)','Feature-Based Architecture'],
+      familiar :  ['Material Design 3 (Design Token)'],
       usable :  [ '(Spring)MVC','(express)Layered Architecture'],
     }
   }
