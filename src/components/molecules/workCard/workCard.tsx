@@ -1,9 +1,9 @@
 import './workCard.css'
-type TextTpye={
-  issue:string; 
+export type TextTpye={
+  issue:string;
   resolution:string;
 }
-type WorkCardType = {
+export type WorkCardType = {
   tittle : string;
   during:string;
   skill:string[];
